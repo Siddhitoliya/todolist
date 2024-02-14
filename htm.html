@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <script src="jsscript/angular.min.js"></script>
+    <script src="htm.js"></script>
+    <link rel="stylesheet" href="htm.css">
+</head>
+<body ng-app = "module" ng-controller = "controller" >
+    <h1>My Todo List:</h1>
+    <form ng-submit = "Add()">
+        <input type="text" ng-model = "input" placeholder="kam karo" required> <br>
+        <input type="submit" value="Add New">
+    </form>
+
+    <br>
+    <div ng-repeat="things in list">
+        <input type="checkbox" ng-model = "things.done"> <span ng-bind = "things.text" ng-class = "{strike:things.done != false}"></span>
+    </div>
+    <p><button ng-click = "remove()"> Done</button></p>
+</body>
+</html>
