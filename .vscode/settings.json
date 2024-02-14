@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "undefined/subscriptions/924b87c4-794b-4974-a65f-7a41afd9aec9/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/todolistbysiddhitoliya",
+    "appService.deploySubpath": "."
+}
